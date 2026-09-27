@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdulloh Ismoilov | Policy, Debate &amp; Information Systems</title>
+  <meta name="description" content="Student at ALWIUT combining competitive debate, policy research, and data analytics.">
+  <meta name="author" content="Abdulloh Ismoilov">
+  <link rel="canonical" href="https://abdullohismoilov.github.io/">
+
+  <!-- Open Graph / LinkedIn preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Abdulloh Ismoilov">
+  <meta property="og:title" content="Abdulloh Ismoilov | Policy, Debate & Information Systems">
+  <meta property="og:description" content="Student at ALWIUT combining competitive debate, policy research, and data analytics.">
+  <meta property="og:url" content="https://abdullohismoilov.github.io/">
+  <meta property="og:image" content="https://abdullohismoilov.github.io/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter/X card (LinkedIn falls back to Open Graph, included for completeness) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abdulloh Ismoilov | Policy, Debate & Information Systems">
+  <meta name="twitter:description" content="Student at ALWIUT combining competitive debate, policy research, and data analytics.">
+  <meta name="twitter:image" content="https://abdullohismoilov.github.io/assets/og-image.jpg">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVIGATION
+       ============================================================ -->
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a href="#about" class="navbar__brand">Abdulloh Ismoilov</a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+      </button>
+
+      <nav class="navbar__links" id="navLinks" aria-label="Primary">
+        <a href="#about" class="navbar__link">About</a>
+        <a href="#debate-policy" class="navbar__link">Debate &amp; Policy</a>
+        <a href="#tech-is" class="navbar__link">Tech &amp; IS</a>
+        <a href="#honors" class="navbar__link">Honors</a>
+        <a href="#contact" class="navbar__link">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="navbar__overlay" id="navOverlay"></div>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section class="hero container" id="about">
+      <div class="hero__content">
+        <p class="text-sm" style="color:var(--accent-cyan); font-weight:600; letter-spacing:0.01em; margin-bottom:var(--space-4);">
+          Policy Research × Computational Analysis
+        </p>
+        <h1 class="hero__title">Analyzing governance frameworks through structured debate and data-driven models.</h1>
+        <p class="hero__subtitle">Secondary School Student at Academic Lyceum of WIUT (ALWIUT).</p>
+        <div class="hero__actions">
+          <a href="#debate-policy" class="btn btn--primary">Explore Policy Vault</a>
+          <a href="#tech-is" class="btn btn--secondary">View SQL &amp; Code</a>
+          <a href="https://linkedin.com/in/abdullohismoilov" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero__frame">
+        <img src="assets/headshot.jpg" alt="Portrait of Abdulloh Ismoilov" loading="lazy" width="380" height="380">
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 1 — POLICY & DEBATE VAULT
+         ============================================================ -->
+    <section class="section container" id="debate-policy">
+      <h2 class="section__heading">Policy &amp; Debate Vault</h2>
+
+      <div class="filter-bar" role="group" aria-label="Filter research by type">
+        <button class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn" data-filter="brief" aria-pressed="false">Debate Briefs</button>
+        <button class="filter-btn" data-filter="mun" aria-pressed="false">MUN Position Papers</button>
+        <button class="filter-btn" data-filter="speech" aria-pressed="false">Speeches</button>
+      </div>
+
+      <div class="project-grid" id="policyGrid">
+
+        <article class="project-card" data-category="policy" data-type="brief">
+          <h3 class="project-card__title">Classical vs. Progressive Education</h3>
+          <p class="project-card__desc">
+            Argued that competency-based, progressive models outperform classical rote instruction on long-run
+            labor-market outcomes, drawing on OECD PISA trend data and comparative Central Asian curriculum reform.
+            Core clash centered on measurability of "soft" competencies versus standardized testing reliability.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag-pill tag-pill--policy">Education Policy</span>
+            <span class="tag-pill tag-pill--policy">AP Format</span>
+          </div>
+          <a href="briefs/classical-vs-progressive-education.pdf" class="btn btn--ghost text-sm"
+             style="margin-top:var(--space-5); padding-inline:0;"
+             data-modal-pdf="briefs/classical-vs-progressive-education.pdf"
+             data-modal-title="Classical vs. Progressive Education">
+            View Research Brief
+          </a>
+        </article>
+
+        <article class="project-card" data-category="policy" data-type="brief">
+          <h3 class="project-card__title">AI Regulation &amp; Data Privacy in Emerging Markets</h3>
+          <p class="project-card__desc">
+            Built the opposition case against blanket EU-style AI regulation for developing economies, arguing
+            compliance costs disproportionately burden domestic startups. Proposed a tiered-risk framework instead
+            of a single regulatory ceiling.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag-pill tag-pill--policy">Tech Governance</span>
+            <span class="tag-pill tag-pill--policy">BP Format</span>
+          </div>
+          <a href="briefs/ai-regulation-data-privacy.pdf" class="btn btn--ghost text-sm"
+             style="margin-top:var(--space-5); padding-inline:0;"
+             data-modal-pdf="briefs/ai-regulation-data-privacy.pdf"
+             data-modal-title="AI Regulation & Data Privacy in Emerging Markets">
+            View Research Brief
+          </a>
+        </article>
+
+        <article class="project-card" data-category="policy" data-type="mun">
+          <h3 class="project-card__title">UNHRC: Algorithmic Bias &amp; Digital Rights</h3>
+          <p class="project-card__desc">
+            Position paper representing Estonia at a UNHRC committee session, advocating mandatory algorithmic
+            audit trails for public-sector AI systems while preserving innovation incentives for private developers.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag-pill tag-pill--policy">Human Rights</span>
+            <span class="tag-pill tag-pill--policy">MUN — UNHRC</span>
+          </div>
+          <a href="papers/unhrc-algorithmic-bias.pdf" class="btn btn--ghost text-sm"
+             style="margin-top:var(--space-5); padding-inline:0;"
+             data-modal-pdf="papers/unhrc-algorithmic-bias.pdf"
+             data-modal-title="UNHRC: Algorithmic Bias & Digital Rights">
+            View Research Brief
+          </a>
+        </article>
+
+        <article class="project-card" data-category="policy" data-type="mun">
+          <h3 class="project-card__title">ECOSOC: Central Asian Water Governance</h3>
+          <p class="project-card__desc">
+            Position paper on transboundary water-sharing frameworks along the Amu Darya and Syr Darya basins,
+            proposing a regional arbitration mechanism modeled on the Mekong River Commission.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag-pill tag-pill--policy">Environmental Policy</span>
+            <span class="tag-pill tag-pill--policy">MUN — ECOSOC</span>
+          </div>
+          <a href="papers/ecosoc-water-governance.pdf" class="btn btn--ghost text-sm"
+             style="margin-top:var(--space-5); padding-inline:0;"
+             data-modal-pdf="papers/ecosoc-water-governance.pdf"
+             data-modal-title="ECOSOC: Central Asian Water Governance">
+            View Research Brief
+          </a>
+        </article>
+
+        <article class="project-card" data-category="policy" data-type="speech">
+          <h3 class="project-card__title">Grand Final Closing Statement — Central Asian Debate Championship</h3>
+          <p class="project-card__desc">
+            Closing rebuttal for the government bench on "This House Would Nationalize Critical AI Infrastructure,"
+            synthesizing three rounds of clash into a single risk-benefit framework for the judging panel.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag-pill tag-pill--policy">Grand Final</span>
+            <span class="tag-pill tag-pill--policy">BP Format</span>
+          </div>
+          <a href="speeches/cadc-grand-final-closing.pdf" class="btn btn--ghost text-sm"
+             style="margin-top:var(--space-5); padding-inline:0;"
+             data-modal-pdf="speeches/cadc-grand-final-closing.pdf"
+             data-modal-title="Grand Final Closing Statement — Central Asian Debate Championship">
+            View Research Brief
+          </a>
+        </article>
+
+        <article class="project-card" data-category="policy" data-type="brief">
+          <h3 class="project-card__title">Standardized Testing vs. Portfolio-Based Assessment</h3>
+          <p class="project-card__desc">
+            Proposition case arguing portfolio-based assessment better predicts university performance than
+            single-sitting standardized exams, citing longitudinal data from early-adopter school districts.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag-pill tag-pill--policy">Education Policy</span>
+            <span class="tag-pill tag-pill--policy">AP Format</span>
+          </div>
+          <a href="briefs/standardized-testing-vs-portfolio.pdf" class="btn btn--ghost text-sm"
+             style="margin-top:var(--space-5); padding-inline:0;"
+             data-modal-pdf="briefs/standardized-testing-vs-portfolio.pdf"
+             data-modal-title="Standardized Testing vs. Portfolio-Based Assessment">
+            View Research Brief
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2 — INFORMATION SYSTEMS & DATA ANALYTICS
+         ============================================================ -->
+    <section class="section container" id="tech-is">
+      <h2 class="section__heading">Information Systems &amp; Data Analytics</h2>
+
+      <div class="project-grid">
+
+        <article class="project-card" data-category="tech" style="grid-column: 1 / -1;">
+          <h3 class="project-card__title">Legislative &amp; Policy Dataset Querying (SQL)</h3>
+          <p class="project-card__desc">
+            Built a relational schema from public legislative records to cross-reference bill sponsorship,
+            committee votes, and topic tags — used to source evidence for debate briefs above.
+          </p>
+
+          <div class="code-block">
+            <div class="code-block__header">
+              <div class="code-block__dots">
+                <span class="code-block__dot code-block__dot--red"></span>
+                <span class="code-block__dot code-block__dot--amber"></span>
+                <span class="code-block__dot code-block__dot--green"></span>
+              </div>
+              <span class="code-block__lang">query.sql</span>
+              <button class="code-block__copy" data-copy-target="sql-1">Copy</button>
+            </div>
+            <pre><code id="sql-1"><span class="tok-keyword">SELECT</span>
+    b.bill_id,
+    b.title,
+    b.topic_tag,
+    <span class="tok-keyword">COUNT</span>(v.vote_id) <span class="tok-keyword">AS</span> total_votes,
+    <span class="tok-keyword">SUM</span>(<span class="tok-keyword">CASE WHEN</span> v.position = <span class="tok-string">'yea'</span> <span class="tok-keyword">THEN</span> 1 <span class="tok-keyword">ELSE</span> 0 <span class="tok-keyword">END</span>) <span class="tok-keyword">AS</span> yea_votes
+<span class="tok-keyword">FROM</span> bills b
+<span class="tok-keyword">JOIN</span> votes v <span class="tok-keyword">ON</span> b.bill_id = v.bill_id
+<span class="tok-keyword">JOIN</span> legislators l <span class="tok-keyword">ON</span> v.legislator_id = l.legislator_id
+<span class="tok-keyword">WHERE</span> b.topic_tag <span class="tok-keyword">IN</span> (<span class="tok-string">'ai_governance'</span>, <span class="tok-string">'data_privacy'</span>)
+  <span class="tok-keyword">AND</span> b.session_year >= <span class="tok-number">2022</span>
+<span class="tok-keyword">GROUP BY</span> b.bill_id, b.title, b.topic_tag
+<span class="tok-keyword">ORDER BY</span> total_votes <span class="tok-keyword">DESC</span>;
+
+<span class="tok-comment">-- Returns AI/privacy bills ranked by legislative engagement,</span>
+<span class="tok-comment">-- used to prioritize which motions to research next.</span></code></pre>
+          </div>
+
+          <div class="project-card__tags">
+            <span class="tag-pill tag-pill--tech">SQL</span>
+            <span class="tag-pill tag-pill--tech">Relational Modeling</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="tech" style="grid-column: 1 / -1;">
+          <h3 class="project-card__title">Automated Debate Brief Scraping (Python)</h3>
+          <p class="project-card__desc">
+            A scheduled scraper that pulls newly published motions from tournament announcement pages, tags them
+            by topic using keyword matching, and logs them to a personal research backlog.
+          </p>
+
+          <div class="code-block">
+            <div class="code-block__header">
+              <div class="code-block__dots">
+                <span class="code-block__dot code-block__dot--red"></span>
+                <span class="code-block__dot code-block__dot--amber"></span>
+                <span class="code-block__dot code-block__dot--green"></span>
+              </div>
+              <span class="code-block__lang">scraper.py</span>
+              <button class="code-block__copy" data-copy-target="py-1">Copy</button>
+            </div>
+            <pre><code id="py-1"><span class="tok-keyword">import</span> requests
+<span class="tok-keyword">from</span> bs4 <span class="tok-keyword">import</span> BeautifulSoup
+
+<span class="tok-keyword">def</span> <span class="tok-function">fetch_motions</span>(url: <span class="tok-keyword">str</span>) -> <span class="tok-keyword">list</span>[<span class="tok-keyword">dict</span>]:
+    <span class="tok-string">"""Scrape newly posted tournament motions and topic-tag them."""</span>
+    response = requests.get(url, timeout=<span class="tok-number">10</span>)
+    soup = BeautifulSoup(response.text, <span class="tok-string">"html.parser"</span>)
+    motions = []
+
+    <span class="tok-keyword">for</span> row <span class="tok-keyword">in</span> soup.select(<span class="tok-string">".motion-row"</span>):
+        title = row.select_one(<span class="tok-string">".motion-title"</span>).get_text(strip=<span class="tok-keyword">True</span>)
+        motions.append({
+            <span class="tok-string">"title"</span>: title,
+            <span class="tok-string">"tag"</span>: <span class="tok-function">classify_topic</span>(title),
+            <span class="tok-string">"source"</span>: url,
+        })
+    <span class="tok-keyword">return</span> motions</code></pre>
+          </div>
+
+          <div class="project-card__tags">
+            <span class="tag-pill tag-pill--tech">Python</span>
+            <span class="tag-pill tag-pill--tech">Web Scraping</span>
+          </div>
+
+          <div class="terminal" style="margin-top:var(--space-5);">
+            <div class="terminal__line terminal__line--prompt">python scraper.py --tournament cadc-2026</div>
+            <div class="terminal__line terminal__line--output">Fetched 14 motions from cadc-2026/announcements</div>
+            <div class="terminal__line terminal__line--output">Tagged: 6 tech_governance · 4 education · 3 environment · 1 economics</div>
+            <div class="terminal__line terminal__line--output">Saved to research_backlog.csv</div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3 — VERIFIED TOURNAMENT RECORD
+         ============================================================ -->
+    <section class="section container" id="honors">
+      <h2 class="section__heading">Verified Tournament Record</h2>
+
+      <div class="table-wrapper">
+        <table class="table--timeline">
+          <thead>
+            <tr>
+              <th scope="col">Year</th>
+              <th scope="col">Tournament</th>
+              <th scope="col">Format</th>
+              <th scope="col">Role</th>
+              <th scope="col">Standing / Award</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2025</td>
+              <td>Tashkent National Debate Open</td>
+              <td>AP</td>
+              <td>2nd Speaker</td>
+              <td>Semifinalist</td>
+            </tr>
+            <tr>
+              <td>2025</td>
+              <td>WIUT Model United Nations Conference</td>
+              <td>MUN — UNHRC</td>
+              <td>Delegate</td>
+              <td>Best Position Paper</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>Central Asian Debate Championship</td>
+              <td>BP</td>
+              <td>Whip</td>
+              <td>Octofinalist</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>ALWIUT Internal Debate League</td>
+              <td>AP</td>
+              <td>Team Captain</td>
+              <td>Champion</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td>Almaty International MUN</td>
+              <td>MUN — ECOSOC</td>
+              <td>Delegate</td>
+              <td>Honorable Mention</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td>Tashkent Regional Debate Cup</td>
+              <td>AP</td>
+              <td>1st Speaker</td>
+              <td>Best Speaker Award</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4 — CONTACT
+         ============================================================ -->
+    <section class="section container" id="contact">
+      <h2 class="section__heading">Contact</h2>
+      <p class="text-lg" style="max-width:56ch;">
+        Open to conversations about debate coaching, policy research collaboration, or student data projects —
+        reach out directly or find me on the platforms below.
+      </p>
+
+      <div class="hero__actions" style="margin-bottom:var(--space-6);">
+        <a href="mailto:abdulloh.ismoilov@example.com" class="btn btn--primary">Email Me</a>
+        <button type="button" class="btn btn--ghost" id="copyEmailBtn" data-copy-email="abdulloh.ismoilov@example.com" style="position:relative;">
+          Copy Email
+          <span class="copy-tooltip" id="copyEmailTooltip" role="status" aria-live="polite">Copied!</span>
+        </button>
+        <a href="https://github.com/abdullohismoilov" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">GitHub</a>
+        <a href="https://linkedin.com/in/abdullohismoilov" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">LinkedIn</a>
+      </div>
+
+      <span style="display:inline-flex; align-items:center; padding:0.3rem 0.9rem; border-radius:var(--radius-full); border:1px solid var(--border-color); color:var(--text-secondary); font-size:var(--fs-small); background:var(--bg-secondary);">
+        Currently preparing for Digital SAT/IELTS &amp; ALWIUT coursework
+      </span>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="container" style="padding-block:var(--space-10); border-top:1px solid var(--border-color);">
+    <div class="flex--between" style="flex-wrap:wrap; gap:var(--space-4);">
+      <p class="text-xs" style="margin:0;">&copy; 2026 Abdulloh Ismoilov. Built and maintained independently.</p>
+      <div class="flex" style="gap:var(--space-5);">
+        <a href="mailto:abdulloh.ismoilov@example.com" class="text-xs">Email</a>
+        <a href="https://github.com/abdullohismoilov" target="_blank" rel="noopener noreferrer" class="text-xs">GitHub</a>
+        <a href="https://linkedin.com/in/abdullohismoilov" target="_blank" rel="noopener noreferrer" class="text-xs">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       PDF PREVIEW MODAL (triggered by [data-modal-pdf] links via script.js)
+       ============================================================ -->
+  <div class="modal-overlay" id="pdfModalOverlay" role="dialog" aria-modal="true" aria-labelledby="pdfModalTitle">
+    <div class="modal">
+      <div class="modal__header">
+        <h3 class="modal__title" id="pdfModalTitle">Research Brief</h3>
+        <button class="modal__close" id="pdfModalClose" aria-label="Close preview">&times;</button>
+      </div>
+      <div class="modal__body">
+        <iframe class="modal__pdf" id="pdfModalFrame" src="" title="PDF preview"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
